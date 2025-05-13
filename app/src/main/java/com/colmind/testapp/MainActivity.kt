@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
                 if (Character.isLetter(c) || Character.isDigit(c)) {
                     return@InputFilter "" + c
                 } else if (source?.contains(" ") == true) {
-                    return@InputFilter ""
+                    return@InputFilter " "
                 } else {
                     //error("error!")
                     return@InputFilter ""
