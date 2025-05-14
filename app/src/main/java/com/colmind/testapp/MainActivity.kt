@@ -3,14 +3,12 @@ package com.colmind.testapp
 import android.os.Bundle
 import android.text.InputFilter
 import android.util.Log
-import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.text.isDigitsOnly
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.colmind.testapp.databinding.ActivityMainBinding
-
 
 
 class MainActivity : AppCompatActivity() {
@@ -24,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
 
 
-        val myFilter = InputFilter { source, start, end, dest, dstart, dend ->
+        val myFilter = InputFilter { source, _, end, dest, dstart, dend ->
             try {
                 val c = source[0]
                 if (Character.isLetter(c) || Character.isDigit(c)) {

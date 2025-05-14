@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TestAppCol</string>
+    <string name="label_append">Append</string>
+    <string name="label_clear">Clear</string>
+    <string name="label_numeric">Numeric</string>
+    <string name="label_reverse">Reverse</string>
+    <string name="label_enter_input">Enter any text</string>
 </resources>
